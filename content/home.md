@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: Dixon Fences
 ---
 
-This is the home page
+Welcome to Dixon Fences HELP.

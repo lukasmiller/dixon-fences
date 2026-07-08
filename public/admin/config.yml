@@ -1,17 +1,82 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: lukasmiller/dixon-fences
   branch: main
 
-media_folder: "public/uploads"
-public_folder: "/uploads"
+media_folder: public/uploads
+public_folder: /uploads
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: pages
+    label: Pages
     files:
-      - label: "Home"
-        name: "home"
-        file: "content/home.md"
+      - label: Homepage
+        name: home
+        file: content/home.md
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - label: Title
+            name: title
+            widget: string
+          - label: Body
+            name: body
+            widget: markdown
+
+      - label: About Us
+        name: about
+        file: content/about.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Subtitle
+            name: subtitle
+            widget: string
+            required: false
+          - label: Body
+            name: body
+            widget: markdown
+
+      - label: Services
+        name: services
+        file: content/services.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Subtitle
+            name: subtitle
+            widget: string
+            required: false
+          - label: Body
+            name: body
+            widget: markdown
+
+      - label: Projects
+        name: projects
+        file: content/projects.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Subtitle
+            name: subtitle
+            widget: string
+            required: false
+          - label: Body
+            name: body
+            widget: markdown
+
+      - label: FAQ
+        name: faq
+        file: content/faq.md
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Subtitle
+            name: subtitle
+            widget: string
+            required: false
+          - label: Body
+            name: body
+            widget: markdown
