@@ -1,0 +1,29 @@
+ .socials a, .icon,  #form input, #form textarea, .camera_wrap, .round, a.btn, .ban i, .box, .box img, .fleft, .blog time span  {
+	behavior:url(js/PIE.htc);
+	position: relative;
+}
+
+#form .success-message {
+	behavior:url(js/PIE.htc);
+	position: relative;
+}
+
+
+
+a.gal:hover img {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+}
+
+
+#form .invalid .error-message, #form .empty .empty-message {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+#form .error-message, #form .empty-message {
+	background-color: #EFECE7;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+
+.socials a {
+    margin:0 13px;
+}

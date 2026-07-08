@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fefefe;
+  --foreground: #194565;
+  --surface: #e0e8ed;
+  --muted: #b7c8d4;
+  --accent: #194565;
 }
 
 @theme inline {
@@ -14,8 +17,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #fefefe;
+    --foreground: #194565;
+    --surface: #e0e8ed;
+    --muted: #b7c8d4;
+    --accent: #194565;
   }
 }
 
@@ -23,4 +29,52 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+.page1,
+.content,
+footer,
+.page1_block,
+.extra_wrapper {
+  background-color: var(--background);
+}
+
+header,
+footer,
+.page1_block {
+  background-color: var(--surface);
+  color: var(--foreground);
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--foreground);
+}
+
+h1,
+h2,
+h3,
+h4,
+strong,
+address {
+  color: var(--foreground);
+}
+
+.sf-menu > li > a,
+.sf-menu > li.current > a {
+  color: var(--accent);
+}
+
+.sf-menu > li > a:hover,
+.sf-menu > li.current > a:hover {
+  color: var(--foreground);
+}
+
+.socials a,
+.socials i {
+  color: var(--accent);
 }
